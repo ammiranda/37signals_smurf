@@ -47,6 +47,8 @@ table {
     border-spacing: 0;
 }
 /* End of Reset */
+
+/* Start of Nav */
 .box-container {
 	display: block;
 	}
@@ -83,10 +85,13 @@ table {
 	text-decoration: none;
 	margin: 0;
 	}
-.signin a:hover {
+.nav li a.signin:hover {
 	color: #336699;
 	text-decoration: none;
 	}
+/* End of Nav */
+
+/* Start of Main */
 .container {
 	border: none;
 	text-align: center;
@@ -97,11 +102,10 @@ table {
 	text-align: center;
 	position: relative;
 	}
-.signin a {
-	float: right;
-	color: #18AFE0;
-	position: absolute;
-	}
+.nav li a.signin {
+ color: #18AFE0;
+ color: #18afe0;
+ }
 .headline h1 {
 	font-weight: 550;
 	font-style: normal;
@@ -179,7 +183,7 @@ hr {
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 	font-size: 14px;
 	margin: 5px 0 10px;
-	font-weight: bold;
+	font-weight: 600;
 	position: relative;
 	top: 15px;
 	}
@@ -200,3 +204,4 @@ hr {
 	position: relative;
 	left: 2px;
 	}
+/* End of Main */
