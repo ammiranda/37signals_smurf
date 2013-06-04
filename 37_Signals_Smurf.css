@@ -89,6 +89,10 @@ table {
 	color: #336699;
 	text-decoration: none;
 	}
+.nav li a.signin {
+ color: #18AFE0;
+ color: #18afe0;
+ }
 /* End of Nav */
 
 /* Start of Main */
@@ -102,10 +106,7 @@ table {
 	text-align: center;
 	position: relative;
 	}
-.nav li a.signin {
- color: #18AFE0;
- color: #18afe0;
- }
+
 .headline h1 {
 	font-weight: 550;
 	font-style: normal;
