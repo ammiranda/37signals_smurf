@@ -3,8 +3,47 @@
 	<title>37signals: Web-based collaboration apps for small business</title>
 	<link rel="stylesheet" href="37_Signals_Smurf.css" type="text/css">
 	<div style="display:inline;">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/986221142/?label=MWiSCNrHgQMQ1pSi1gM&amp;guid=ON&amp;script=0"/>
 </div>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$("div#basecamp_head").hide();
+	$("div#highrise_head").hide();
+	$("div#campfire_head").hide();
+	$("li#basecamp").hover(
+		function () {
+			$(".headline").hide();
+			$("div#basecamp_head").show();
+			},
+		function () {
+			$("div#basecamp_head").hide();
+			$(".headline").show();
+			}
+			);
+	$("li#highrise").hover(
+		function () {
+			$(".headline").hide();
+			$("div#highrise_head").show();
+			},
+		function () {
+			$("div#highrise_head").hide();
+			$(".headline").show();
+			}
+			);
+	$("li#campfire").hover(
+		function () {
+			$(".headline").hide();
+			$("div#campfire_head").show();
+			},
+		function () {
+			$("div#campfire_head").hide();
+			$(".headline").show();
+			}
+			);
+});
+</script>
 </head>
 <body class="index">
 	<div class="nav">
@@ -40,6 +79,19 @@
 			<div class="headline">
 				<h1>Making collaboration productive and enjoyable for people every day.</h1>
 				<h5>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h5>
+			</div>
+			<div id="basecamp_head">
+				<h1><span class="highlight">Basecamp</span> is the project management tool you wish you had on your last project.</h1>
+				<h5>Are you still managing projects with email? Are you still using Excel for your to-do lists? It's time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.</h5>
+			</div>
+			<div id="highrise_head">
+				<h1><span class="highlight">Highrise</span> remembers the important things about people you'd normally forget.</h1>
+				<h5>Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</h5>
+			</div>
+			<div id="campfire_head">
+				<h1>From near or far, <span class="highlight">Campfire</span> helps teams work together over the web in real-time.</h1>
+				<h5>Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room.  It's game changing. We couldn't run our own business without Campfire.</h5>
+			</div>	
 			</div>
 			<ul>
 				<li class="product-info" id="basecamp">
@@ -96,7 +148,5 @@
 				<img src="http://37signals.com/images/im-hr.png">
 			</hr>
 		</div>
-		<script src="jquery.min.js"></script>
-		<script src="application.js"></script>
 </body>
 </html>

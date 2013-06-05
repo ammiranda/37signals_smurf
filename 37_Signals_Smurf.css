@@ -107,7 +107,7 @@ table {
 	position: relative;
 	}
 
-.headline h1 {
+h1 {
 	font-weight: 550;
 	font-style: normal;
 	font-size: 58px;
@@ -118,10 +118,14 @@ table {
 	color: #232323;
 	padding-top: 10px;
 	}
-.headline h5{
+h5 {
 	font-size: 20px;
 	font-weight: 500;
 	margin: 10px 0;
+	}
+.highlight {
+	text-decoration: underline;
+	color: #336699;
 	}
 .box-container ul {
 	display: inline;
